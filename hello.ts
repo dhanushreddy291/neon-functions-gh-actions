@@ -12,4 +12,6 @@ app.get('/', async (c) => {
   });
 });
 
+app.get('/health', (c) => c.json({ status: 'ok' }));
+
 export default app;
