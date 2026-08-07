@@ -1,0 +1,24 @@
+{
+  "name": "neon-functions-github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@neon/config": "^0.14.0",
+    "@neon/env": "^0.14.0",
+    "hono": "^4.13.0",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.4",
+    "dotenv": "^17.4.2",
+    "typescript": "^7.0.2"
+  }
+}
