@@ -11,9 +11,8 @@ on:
       - synchronize
       - closed
 
-# Ensures only the latest commit runs, preventing race conditions in concurrent PR updates
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
