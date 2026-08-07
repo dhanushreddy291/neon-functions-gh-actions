@@ -13,6 +13,13 @@ export default defineConfig({
           GREETING: process.env.GREETING ?? 'Hello World',
         },
       },
+      random: {
+        name: 'Random Number API',
+        source: './random.ts',
+        env: {
+          GREETING: process.env.GREETING ?? 'Hello World',
+        },
+      }
     },
   },
 });
