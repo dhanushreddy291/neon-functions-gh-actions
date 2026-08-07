@@ -78,10 +78,7 @@ jobs:
         with:
           script: |
             const urls = `${{ steps.function_urls.outputs.urls }}`;
-            const body = `**Preview functions deployed:**
-${urls}
-
-These functions run on an isolated Neon branch for this PR, against the branch's own database. Both are deleted when the PR is closed.`;
+            const body = `**Preview functions deployed:**\n${urls}\n\nThese functions run on an isolated Neon branch for this PR, against the branch's own database. Both are deleted when the PR is closed.`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
