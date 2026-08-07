@@ -13,6 +13,13 @@ export default defineConfig({
           GREETING: process.env.GREETING ?? 'Hello World',
         },
       },
+      time: {
+        name: 'Time API',
+        source: './time.ts',
+        env: {
+          GREETING: process.env.GREETING ?? 'Hello World',
+        },
+      }
     },
   },
 });
