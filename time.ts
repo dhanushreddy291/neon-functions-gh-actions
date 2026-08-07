@@ -9,6 +9,7 @@ app.get('/', async (c) => {
   return c.json({
     greeting: process.env.GREETING,
     time: rows[0].now,
+    timezone: process.env.TZ ?? 'UTC',
   });
 });
 
