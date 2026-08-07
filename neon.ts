@@ -13,7 +13,7 @@ export default defineConfig({
           GREETING: process.env.GREETING ?? 'Hello World',
         }
       },
-      pg_stats: {
+      pgstats: {
         name: 'Postgres Stats API',
         source: './pg_stats.ts',
         env: {
